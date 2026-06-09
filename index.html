@@ -1,95 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Intro Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snehith Panda | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body style ="
-    background-color: black;
-    color:white;">
-    <h1 style="justify-self: center;">Welcome to My Personal Intro Page</h1>
- 
-    <div class = "hero-section" 
-        style="
-            display: flex; 
-            justify-content: space-between;">
-            <div class="introduction">
-                <p>Hello, I'm Snehith!</p>
-                <p>I'm a future software developer.</p>
-            </div>
-            <div class="profile-picture">
-                <img src="profile.jpg" 
-                alt="Profile Picture"
-                style="
-                    width: 150px; 
-                    height: 150px; 
-                    border-radius: 50%;">
-            </div>
-    </div>
- 
-    <h2 style="justify-self: center;">About Me</h2>
-    <div class="about-me-section">
-        <p>I am passionate about coding and technology.</p>
-        <p>I enjoy learning new programming languages and working on exciting projects.</p>
-    </div>
- 
-    <h2 style="justify-self: center;">My Goals</h2>
-    <div class ="goals-section">
-        <p>My goal is to become a skilled software developer and contribute to innovative projects that make a positive impact on the world.</p>
-    </div>
 
-    <h2 style="justify-self: center;">My Projects</h2>
-    <div class ="projects-section"
-        display: flex;
-        flex-direction: row;>
-        <div class="project">
-            <h3>Project 1: Personal Portfolio Website</h3>
-            <p>This project is a personal portfolio website that showcases my skills, projects, and experience. It is built using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2: Weather App</h3>
-            <p>This project is a Weather App. It is built using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project">
-            <h3>Project 3: Movie Explorer</h3>
-            <p>This project is a Movie Explorer App. It is built using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project">
-            <h3>Project 4: File Organizer</h3>
-            <p>This project is a Python Automation Script. It is built using Python.</p>
-        </div>
-        <div class="project">
-            <h3>Project 5: Coming soon ...</h3>
-        </div>
-    </div>
+<body>
 
-    <h2 style="justify-self: center;">Contact Me</h2>
-    <div class="contact-section">
-        <p>You can reach me at:</p>
+<div class="container">
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Snehith Panda</h1>
+        <h2>Aspiring Software Developer</h2>
+
+        <p>
+            Passionate about coding, problem-solving, and building
+            useful applications with modern technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <h2>About Me</h2>
+
+    <section id="about" class="about-me-section">
+        <p>
+            I am passionate about software development and technology.
+            I enjoy learning new programming languages, building projects,
+            and improving my problem-solving skills.
+        </p>
+
+        <p>
+            My goal is to become a skilled software developer and contribute
+            to innovative projects that make a positive impact.
+        </p>
+
+        <p>
+            Outside coding, I enjoy exploring new technologies, learning
+            development best practices, and working on personal projects.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <h2>Skills</h2>
+
+    <section id="skills" class="skills-section">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Git</span>
+        <span>GitHub</span>
+    </section>
+
+    <!-- Projects Section -->
+    <h2>Projects</h2>
+
+    <section id="projects" class="projects-section">
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                A responsive portfolio website showcasing my skills,
+                projects, and contact information.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Weather App</h3>
+
+            <p>
+                A weather application that fetches and displays
+                real-time weather information.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Movie Explorer</h3>
+
+            <p>
+                Search and discover movies using a public movie API.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>File Organizer</h3>
+
+            <p>
+                Python automation script that organizes files into
+                folders automatically.
+            </p>
+
+            <p><strong>Technologies:</strong> Python</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <h2>Contact Me</h2>
+
+    <section id="contact" class="contact-section">
+
         <ul>
-            <li>Email: snehithpanda007@gmail.com</li>
-            <li>GitHub: https://github.com/snehithpanda007-lgtm</li>
-            <li>LinkedIn: https://www.linkedin.com/in/snehith-panda-9314a43b9</li>
-        </ul>
-    </div>
-    
-    <style>
-        .hero-section, .about-me-section, .goals-section, .projects-section, .contact-section {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 5px;
-        }
- 
-        .profile-picture {
-           background-color: #333;
-           border-radius: 5px;
-        }
+            <li>
+                Email:
+                <a href="mailto:snehithpanda007@gmail.com">
+                    snehithpanda007@gmail.com
+                </a>
+            </li>
 
-        .project{
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-    </style>
+            <li>
+                GitHub:
+                <a href="https://github.com/snehithpanda007-lgtm" target="_blank">
+                    github.com/snehithpanda007-lgtm
+                </a>
+            </li>
+
+            <li>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/snehith-panda-9314a43b9"
+                   target="_blank">
+                    linkedin.com/in/snehith-panda-9314a43b9
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Snehith Panda. Built with HTML & CSS.</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
