@@ -8,176 +8,379 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-<div class="container">
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img id="modalImage" class="modal-content" alt="Project Preview">
+    </div>
 
-    <!-- Navbar -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Snehith Panda</h1>
-        <h2>Aspiring Software Developer</h2>
+        <!-- Navigation -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
 
-        <p>
-            Passionate about coding, problem-solving, and building
-            useful applications with modern technologies.
-        </p>
+            <button id="themeToggle">🌙</button>
+        </nav>
 
-        <div class="hero-buttons">
-            <a href="#projects">View Projects</a>
-            <a href="#contact">Contact Me</a>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Snehith Panda</h1>
 
-    <!-- About Section -->
-    <h2>About Me</h2>
-
-    <section id="about" class="about-me-section">
-        <p>
-            I am passionate about software development and technology.
-            I enjoy learning new programming languages, building projects,
-            and improving my problem-solving skills.
-        </p>
-
-        <p>
-            My goal is to become a skilled software developer and contribute
-            to innovative projects that make a positive impact.
-        </p>
-
-        <p>
-            Outside coding, I enjoy exploring new technologies, learning
-            development best practices, and working on personal projects.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <h2>Skills</h2>
-
-    <section id="skills" class="skills-section">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>Git</span>
-        <span>GitHub</span>
-    </section>
-
-    <!-- Projects Section -->
-    <h2>Projects</h2>
-
-    <section id="projects" class="projects-section">
-
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
+            <h2>Computer Science Student • AI & Full-Stack Developer</h2>
 
             <p>
-                A responsive portfolio website showcasing my skills,
-                projects, and contact information.
+                Building projects with JavaScript and Python while learning
+                software engineering, AI, and modern web development.
             </p>
 
-            <p><strong>Technologies:</strong> HTML, CSS</p>
+            <div class="hero-buttons">
+                <a href="#projects">View Projects</a>
 
-            <div class="project-links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <h3>Weather App</h3>
-
-            <p>
-                A weather application that fetches and displays
-                real-time weather information.
-            </p>
-
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-
-            <div class="project-links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <h3>Movie Explorer</h3>
-
-            <p>
-                Search and discover movies using a public movie API.
-            </p>
-
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-
-            <div class="project-links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <h3>File Organizer</h3>
-
-            <p>
-                Python automation script that organizes files into
-                folders automatically.
-            </p>
-
-            <p><strong>Technologies:</strong> Python</p>
-
-            <div class="project-links">
-                <a href="#">GitHub</a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <h2>Contact Me</h2>
-
-    <section id="contact" class="contact-section">
-
-        <ul>
-            <li>
-                Email:
-                <a href="mailto:snehithpanda007@gmail.com">
-                    snehithpanda007@gmail.com
+                <a
+                    href="https://github.com/snehithpanda007-lgtm"
+                    target="_blank"
+                >
+                    GitHub
                 </a>
-            </li>
 
-            <li>
-                GitHub:
-                <a href="https://github.com/snehithpanda007-lgtm" target="_blank">
-                    github.com/snehithpanda007-lgtm
+                <a href="resume.pdf" target="_blank">
+                    Resume
                 </a>
-            </li>
+            </div>
+        </section>
 
-            <li>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/snehith-panda-9314a43b9"
-                   target="_blank">
-                    linkedin.com/in/snehith-panda-9314a43b9
-                </a>
-            </li>
-        </ul>
+        <!-- About Section -->
+        <h2>About Me</h2>
 
-    </section>
+        <section id="about" class="about-me-section">
+            <p>
+                I'm a Computer Science student passionate about software
+                development, artificial intelligence, and building useful
+                applications.
+            </p>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Snehith Panda. Built with HTML & CSS.</p>
-    </footer>
+            <p>
+                Over the past month I have been learning web development,
+                JavaScript, APIs, Python, Git, GitHub, and deployment while
+                consistently building projects to improve my skills.
+            </p>
 
-</div>
+            <p>
+                I enjoy solving problems, exploring new technologies,
+                and sharing my learning journey through projects.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <h2>Skills</h2>
+
+        <section id="skills" class="skills-section">
+
+            <div class="skill-group">
+                <h3>Frontend</h3>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-group">
+                <h3>Programming</h3>
+
+                <span>Python</span>
+            </div>
+
+            <div class="skill-group">
+                <h3>Tools</h3>
+
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>APIs</span>
+                <span>Deployment</span>
+            </div>
+
+        </section>
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+
+            <button
+                class="filter-btn active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="javascript"
+            >
+                JavaScript
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="api"
+            >
+                API
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="python"
+            >
+                Python
+            </button>
+
+        </div>
+
+        <!-- Projects Section -->
+        <h2>Projects</h2>
+
+        <section id="projects" class="projects-section">
+
+            <!-- Weather App -->
+            <div class="project" data-category="javascript api">
+
+                <img
+                    src="images/WeatherApp.png"
+                    alt="Weather App"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Weather App</h3>
+
+                <p>
+                    Real-time weather application using API integration
+                    with responsive design.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/WeatherApp">GitHub</a>
+                    <a href="https://weather-app-tawny-psi-62.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+            <!-- Pomodoro Timer -->
+            <div class="project" data-category="javascript">
+
+                <img
+                    src="images/PomodoroTimer.png"
+                    alt="Pomodoro Timer"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Pomodoro Timer</h3>
+
+                <p>
+                    Productivity timer implementing the Pomodoro
+                    technique for focused work sessions.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/PomodoroTimer">GitHub</a>
+                    <a href="https://pomodoro-timer-sandy-ten.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+            <!-- Todo App -->
+            <div class="project" data-category="javascript">
+
+                <img
+                    src="images/TodoList.png"
+                    alt="Todo List"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Todo List App</h3>
+
+                <p>
+                    Task management application supporting task creation
+                    and deletion.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/TodoList">GitHub</a>
+                    <a href="https://todo-list-beta-jet-41.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+            <!-- Expense Tracker -->
+            <div class="project" data-category="javascript">
+
+                <img
+                    src="images/ExpenseTracker.png"
+                    alt="Expense Tracker"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    Track expenses by category and calculate
+                    spending totals dynamically.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/ExpenseTracker">GitHub</a>
+                    <a href="https://expense-tracker-topaz-omega-ut9dnutpia.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+            <!-- Calculator -->
+            <div class="project" data-category="javascript">
+
+                <img
+                    src="images/Calculator.png"
+                    alt="Calculator"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Calculator</h3>
+
+                <p>
+                    Interactive calculator supporting arithmetic
+                    operations with a responsive UI.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/Calculator">GitHub</a>
+                    <a href="https://calculator-ten-murex-78.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+            <!-- Movie Explorer -->
+            <div class="project" data-category="javascript api">
+
+                <img
+                    src="images/MovieExplorer.png"
+                    alt="Movie Explorer"
+                    class="project-preview"
+                    onclick="openModal(this.src)"
+                >
+
+                <h3>Movie Explorer</h3>
+
+                <p>
+                    Search and discover movies using a public movie API.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/snehithpanda007-lgtm/MovieExplorer">GitHub</a>
+                    <a href="https://movie-explorer-sigma.vercel.app/">Live Demo</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <h2>Contact Me</h2>
+
+        <section id="contact" class="contact-section">
+
+            <ul>
+                <li>
+                    Email:
+                    <a href="mailto:snehithpanda007@gmail.com">
+                        snehithpanda007@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    GitHub:
+                    <a
+                        href="https://github.com/snehithpanda007-lgtm"
+                        target="_blank"
+                    >
+                        github.com/snehithpanda007-lgtm
+                    </a>
+                </li>
+
+                <li>
+                    LinkedIn:
+                    <a
+                        href="https://www.linkedin.com/in/snehith-panda-9314a43b9"
+                        target="_blank"
+                    >
+                        linkedin.com/in/snehith-panda-9314a43b9
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                © 2026 Snehith Panda • Built with HTML, CSS & JavaScript •
+                Hosted on GitHub Pages
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
